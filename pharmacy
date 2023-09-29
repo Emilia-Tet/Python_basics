@@ -1,0 +1,25 @@
+# short code that calculates how many packs of how many tablets to dispense to the pharmacy client based on the recommended dosage of the drug.
+
+import math
+x = input("Podaj ile tabletek pacjent przyjmuje naraz: "
+y = input(f"Podaj ile razy dziennie pacjent przyjmuje porcje {x} tabletek: "
+
+daily = int(x)*int(y)
+max = daily*120
+
+pack_84 = math.floor(max/84)
+pack_56 = math.floor(math,floor(max%84) / 56)
+if pack_56 > 0:
+  pack_28 = math.floor(math.floor(max%56) / 28)
+else:
+  pack_28 = math.floor(math.floor(max%84) / 28)
+
+check = max - pack_84*84 - pack_56 - 56 - pack_28*28
+
+version1 = max%30
+version2 = check
+
+if version1 < version2:
+  print(f"Pacjent moze otrzymac maksymalny zapas {max} tabletek. Wydaj {math.floor(max/30)} opakowan po 30 tabletek lub {(int(math.floor(max/60))} opakowan po 60 tabletek.")
+else:
+  print(f"Pacjent moze otrzymac maksymalny zapas {max} tabletek. Wydaj {pack_84} opakowan po 84, {pack_56} opakowan po 56 i {pack_28} opakowan po 28 tabletek.")
