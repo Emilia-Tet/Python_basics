@@ -1,8 +1,8 @@
 # short code that calculates how many packs of how many tablets to dispense to the pharmacy client based on the recommended dosage of the drug.
 
 import math
-x = input("Podaj ile tabletek pacjent przyjmuje naraz: "
-y = input(f"Podaj ile razy dziennie pacjent przyjmuje porcje {x} tabletek: "
+x = input("Podaj ile tabletek pacjent przyjmuje naraz: ")
+y = input(f"Podaj ile razy dziennie pacjent przyjmuje porcje {x} tabletek: ")
 
 daily = int(x)*int(y)
 max = daily*120
