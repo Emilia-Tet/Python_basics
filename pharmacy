@@ -8,7 +8,7 @@ daily = int(x)*int(y)
 max = daily*120
 
 pack_84 = math.floor(max/84)
-pack_56 = math.floor(math,floor(max%84) / 56)
+pack_56 = math.floor(math.floor(max%84) / 56)
 if pack_56 > 0:
   pack_28 = math.floor(math.floor(max%56) / 28)
 else:
