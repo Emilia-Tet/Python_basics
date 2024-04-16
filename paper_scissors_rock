@@ -14,7 +14,8 @@ def game(users_choice):
     elif computers_win[random_choice] == users_choice:
         result = 'The computer has won. Try again!'
 
-    print(f"You selected: {(game_choice[int(users_choice)-1]).title()}, the computer selected: {random_choice.title()}! {result}")
+    print(f"You selected: {(game_choice[int(users_choice)-1]).title()}, "
+          f"the computer selected: {random_choice.title()}! {result}")
 
 while True:
     my_choice = input("Choose: 1 (paper), 2 (scissors) lub 3 (rock): ")
