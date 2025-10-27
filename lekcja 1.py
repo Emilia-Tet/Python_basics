@@ -12,3 +12,7 @@ print(choice(wybor_Tadzia))
 
 shuffle(wybor_Tadzia)
 print(wybor_Tadzia)
+
+
+wybor_Leosia = ['powietrze', 'woda', 'mleko']
+print(choice(wybor_Leosia))
